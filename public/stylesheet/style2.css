@@ -1,0 +1,215 @@
+/* 
+    ------ refs --------
+  color: rgb(15, 138, 187); 
+
+*/
+
+body {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  height: 100%;
+  /* background-image: url("img/empty-wooden-room/4014.jpg");  */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-repeat: round; */
+}
+
+/* ----------- Headings ---------- */
+
+h1 {
+  text-align: center;
+  color: #cf6d17;
+}
+
+h2 {
+  text-align: center;
+  padding-top: -40px;
+
+}
+
+h3 {
+  display: inline-block;
+}
+
+h3:first-of-type {
+  display: block;
+}
+
+h3 span {
+  color: rgb(15, 138, 187)
+}
+
+/* ----------- Buttons ---------- */
+
+.bt {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 200px;
+  text-decoration: none;
+  transition: background-color 0.4s, border 0.4s, color 0.4s;
+  outline: none;
+}
+
+.bt-full {
+  background-color: rgb(15, 138, 187);;
+  border: 1px solid rgb(15, 138, 187);;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-ghost {
+  border: 1px solid rgb(15, 138, 187);;
+  color: rgb(15, 138, 187);;
+  display: block;
+  margin-left: 70%;
+  margin: 15px 20% 15px 80%;
+}
+
+
+.bt:hover {
+  background-color: #cf6d17;
+}
+
+.bt-full:hover {
+  background-color: #cf6d17;
+  border: 1px solid #cf6d17;
+  color: black;
+  margin-right: 10px;
+}
+
+.btn-ghost:hover {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
+
+/* ----------Inputs------------ */
+
+input[name="compName"]{
+  outline: none;
+  display: block;
+  margin: 15px 30% 15px 70%;
+  border: 1px solid #302b63;
+  /* margin: 10px; */
+  padding: 5px;
+  border-radius: 30px;
+}
+
+/* ----------- Paras ---------- */
+
+p {
+  padding-left: 20px;
+  font-size: 30px;
+  color: white;
+  padding-top: 10px;
+}
+
+
+/* ------ My skills ---------- */
+
+.content {
+  padding-top: 90px;
+  padding-bottom: 200px;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.box1 {
+  padding: 30px;
+  margin-left: 10px;
+  margin-top: 30px;
+  background: linear-gradient(#E91E63, #B53471);
+  background-transform: rotate(-65deg);
+  width: 350px;
+  height: 350px;
+  border-radius: 8px;
+
+  box-shadow: 5px 5px 8px gray;
+  animation: ani1 5.5s infinite;
+
+  text-align: center;
+
+}
+
+
+/* ------ Team skills --------- */
+
+
+.content1 {
+  height: 10em;
+  display: flex;
+  align-items: baseline;
+  justify-content: center
+}
+
+.ola {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 50px;
+  height: auto;
+  max-width: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.box2 {
+  padding-top: 3px;
+
+  margin-left: 10px;
+  margin-top: 30px;
+  background: linear-gradient(#E91E63, #B53471);
+  background-transform: rotate(-65deg);
+  width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 5px 5px 8px gray;
+  /* animation:ani1 5.5s infinite ; */
+
+  text-align: center;
+
+}
+
+
+@keyframes ani1 {
+
+  0% {
+
+    transform: scale(0.85)
+  }
+
+  50% {
+
+    transform: scale(1);
+  }
+
+
+  100% {
+
+    transform: scale(0.75);
+  }
+
+
+
+}
+
+.btn {
+  background-color: rgb(112, 81, 221);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+background-color: RoyalBlue;
+}
+.buttons{
+  padding-bottom: 5%;
+}
