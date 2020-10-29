@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet/style2.css">
+</head>
+    
+<body>
+
+    <h1>Collection Page</h1>
+    <div class="content">
+        <div class="box1">
+            <h3>
+                Name:- J chandu
+            </h3>
+            <h3>
+                Company:- Freelancer
+            </h3>
+            <h3>
+                Experience:- 2years
+            </h3>
+
+            <div class="skill-set" style="color: rgb(8, 103, 141);font-size: 17px;">
+                <h4>Blog writing
+                </h4>
+                <h4>Video editing</h4>
+                <h4> Graphic design</h4>
+                <h4> Web development</h4>
+                <h4>Digital Marketing</h4>
+            </div>
+
+        </div>
+    </div>
+    <h2>My Team</h2>
+    <form action="/shows" method="POST">
+        <div class="content1">
+            <div class="ola">
+                <div class="box2">
+                    <h3>Aravind Raman</h3>
+                    <h3>Company:- D.E.Shaw <span> | </span> </h3>
+                    <h3> Experience:- 1 years </h3>
+                    <h3> Skills:-Blog writing, Video editing, Graphic design, Web development, Digital marketing. </h3>
+                    <button type="button" class="bts bt bt-full">add</button>
+                </div>
+                <div class="box2">
+                    <h3>Mohit babu</h3>
+                    <h3>Company:- TCS <span> | </span> </h3>
+                    <h3> Experience:- 3 years </h3>
+                    <h3> Skills:-Blog writing, Video editing, Graphic design, Web development, Digital marketing. </h3>
+                    <button type="button" class="bts bt bt-full">add</button>
+                </div>
+                <div class="box2">
+                    <h3>Ahamed</h3>
+                    <h3> Company:- Z.R.Tech <span> | </span> </h3>
+                    <h3>Experience:- 2 years </h3>
+                    <h3>Skills:-Blog writing, Video editing, Graphic design, Web development, Digital marketing. <span>
+                            | </span> </h3>
+                    <button type="button" class="bts bt bt-full">add</button>
+                </div>
+                <div class="box2">
+                    <h3>Abhisekh sharma</h3>
+                    <h3> Company:- Freelancer <span> | </span> </h3>
+                    <h3>Experience:- 0 years </h3>
+                    <h3>Skills:-Blog writing, Video editing, Graphic design, Web development, Digital marketing. </h3>
+                    <button type="button" class="bts bt bt-full">add</button>
+                </div>
+                <div class="box2">
+                    <h3>Meena Verma</h3>
+                    <h3> Company:- SmartTech Solutions <span> | </span> </h3>
+                    <h3>Experience:- 1 years </h3>
+                    <h3>Skills:-Blog writing, Video editing, Graphic design, Web development, Digital marketing. </h3>
+                    <button type="button" class="bts bt bt-full">add</button>
+                </div>
+                <div class="box2">
+                    <h3>Varshali patel</h3>
+                    <h3> Company:- Cognizate <span> | </span> </h3>
+                    <h3>Experience:- 1/2 years </h3>
+                    <h3>Skills:-Blog writing, Video editing, Graphic design, Web development, Digital marketing. </h3>
+                    <button type="button" class="bts bt bt-full">add</button>
+                </div>
+                <input type="text" name="compName" placeholder="company Name" required>
+
+                <button class="bt btn-ghost" name="set" type="submit">submit</button>
+                
+                <div style="display: inline-block;" class="buttons" id="mongo">
+                    <a href="/" ><button id="zip" class="btn"><i class="fa fa-close"></i> BACK</button> </a>
+                </div>
+                <div class="hide"></div>
+            </div>
+        </div>
+    </form>
+    <script>
+        var a = [];
+        var bts = document.querySelectorAll(".bts");
+        for (i = 0; i < bts.length; i++) {
+            bts[i].addEventListener("click", function () {
+                this.value = this.parentElement.querySelector("h3").innerHTML;
+                console.log(this.value);
+                a.push(this.value);
+                console.log(a);
+                return a;
+            })
+        }
+
+        // function arrayset() {
+        var subt = document.querySelector("button[type='submit']");
+        subt.addEventListener("click", function () {
+
+            var set = [];
+            for (var i = 0; i < a.length; i++) {
+                set.push({
+                    name: a[i]
+                });
+            }
+            var arrstring = JSON.stringify(set)
+
+            // var parsed = JSON.parse(arrstring);
+
+            this.value = arrstring;
+        })
+
+        // }
+    </script>
+</body>
+
+</html>
