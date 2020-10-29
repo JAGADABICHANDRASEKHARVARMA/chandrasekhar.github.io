@@ -4,10 +4,8 @@
  # After cloning the repo
     Go the directory of the folder in the terminal and 
 
-    npm install
+    "npm install"
         
         
 # Then for running the repo,
-    Type 
-
-   # node app.js
+    Type "node app.js"
